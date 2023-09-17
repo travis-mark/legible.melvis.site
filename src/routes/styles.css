@@ -4,12 +4,10 @@
 	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
+	--color-bg: rgb(36, 55, 70);
+	--color-theme-1: rgb(87, 215, 255);
 	--color-theme-2: #4075a6;
-	--color-text: rgba(0, 0, 0, 0.7);
+	--color-text: rgb(255, 255, 255);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
@@ -20,20 +18,21 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--color-bg-1);
+	background-color: var(--color-bg);
 	background-size: 100vw 100vh;
-	background-image: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(255, 255, 255, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
 }
 
-h1,
-h2,
-p {
-	font-weight: 400;
+h1, h2, h3 { margin: 0; }
+
+@media (max-width: 720px) {
+	h1 { font-size: 1.5625rem; } /* 25pt */
+	h2 { font-size: 1.1875rem; } /* 19pt */
+	h3 { font-size: 1.0625rem; } /* 17pt */
+}
+@media (min-width: 721px) {
+	h1 { font-size: 1.7500rem; } /* 28pt */
+	h2 { font-size: 1.3750rem; } /* 22pt */
+	h3 { font-size: 1.2500rem; } /* 20pt */
 }
 
 p {
@@ -49,14 +48,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1 {
-	font-size: 2rem;
-	text-align: center;
-}
-
-h2 {
-	font-size: 1rem;
-}
 
 pre {
 	font-size: 16px;
@@ -86,12 +77,6 @@ button {
 
 button:focus:not(:focus-visible) {
 	outline: none;
-}
-
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
 }
 
 .visually-hidden {
