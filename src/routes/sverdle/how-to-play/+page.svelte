@@ -1,10 +1,10 @@
 <svelte:head>
-	<title>How to play Sverdle</title>
+	<title>How to play Sverdle | Legible</title>
 	<meta name="description" content="How to play Sverdle" />
 </svelte:head>
 
 <div class="text-column">
-	<h1>How to play Sverdle</h1>
+	<h2>How to play Sverdle</h2>
 
 	<p>
 		Sverdle is a clone of <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a>, the
@@ -12,26 +12,26 @@
 	</p>
 
 	<div class="example">
-		<span class="close">r</span>
-		<span class="missing">i</span>
-		<span class="close">t</span>
-		<span class="missing">z</span>
-		<span class="exact">y</span>
+		<span class="letter close">r</span>
+		<span class="letter missing">i</span>
+		<span class="letter close">t</span>
+		<span class="letter missing">z</span>
+		<span class="letter exact">y</span>
 	</div>
 
 	<p>
-		The <span class="exact">y</span> is in the right place. <span class="close">r</span> and
-		<span class="close">t</span>
+		The <kbd class="exact">y</kbd> is in the right place. <kbd class="close">r</kbd> and
+		<kbd class="close">t</kbd>
 		are the right letters, but in the wrong place. The other letters are wrong, and can be discarded.
 		Let's make another guess:
 	</p>
 
 	<div class="example">
-		<span class="exact">p</span>
-		<span class="exact">a</span>
-		<span class="exact">r</span>
-		<span class="exact">t</span>
-		<span class="exact">y</span>
+		<span class="letter exact">p</span>
+		<span class="letter exact">a</span>
+		<span class="letter exact">r</span>
+		<span class="letter exact">t</span>
+		<span class="letter exact">y</span>
 	</div>
 
 	<p>This time we guessed right! You have <strong>six</strong> guesses to get the word.</p>
@@ -51,28 +51,11 @@
 		font-size: 0.8em;
 		width: 2.4em;
 		height: 2.4em;
-		background-color: white;
 		box-sizing: border-box;
 		border-radius: 2px;
 		border-width: 2px;
-		color: rgba(0, 0, 0, 0.7);
 	}
-
-	.missing {
-		background: rgba(255, 255, 255, 0.5);
-		color: rgba(0, 0, 0, 0.5);
-	}
-
-	.close {
-		border-style: solid;
-		border-color: var(--color-theme-2);
-	}
-
-	.exact {
-		background: var(--color-theme-2);
-		color: white;
-	}
-
+	
 	.example {
 		display: flex;
 		justify-content: flex-start;

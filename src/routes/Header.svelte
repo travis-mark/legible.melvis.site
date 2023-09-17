@@ -5,8 +5,7 @@
 </script>
 
 <header>
-	<div class="text-column">
-		<h1>Legible</h1>
+	<h1>Legible</h1>
 		<nav>
 			<ul>
 				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
@@ -26,12 +25,16 @@
 				</li>
 			</ul>
 		</nav>
-	</div>
 </header>
 
 <style>
-	path {
-		fill: var(--background);
+	header {
+		display: flex;
+		max-width: var(--column-width);
+		width: 100%;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin: 12px auto;
 	}
 
 	ul {

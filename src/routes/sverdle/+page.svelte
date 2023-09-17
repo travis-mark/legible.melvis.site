@@ -84,7 +84,7 @@
 <svelte:window on:keydown={keydown} />
 
 <svelte:head>
-	<title>Sverdle</title>
+	<title>Sverdle | Legible</title>
 	<meta name="description" content="A Wordle clone written in SvelteKit" />
 </svelte:head>
 
@@ -252,37 +252,6 @@
 
 	.grid.playing .row.current {
 		filter: drop-shadow(3px 3px 10px var(--color-bg));
-	}
-
-	.letter {
-		aspect-ratio: 1;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		box-sizing: border-box;
-		text-transform: lowercase;
-		border: none;
-		font-size: calc(0.08 * var(--width));
-		border-radius: 2px;
-		background: white;
-		margin: 0;
-		color: rgba(0, 0, 0, 0.7);
-	}
-
-	.letter.missing {
-		background: rgba(255, 255, 255, 0.5);
-		color: rgba(0, 0, 0, 0.5);
-	}
-
-	.letter.exact {
-		background: var(--color-theme-2);
-		color: white;
-	}
-
-	.letter.close {
-		border: 2px solid var(--color-theme-2);
 	}
 
 	.selected {

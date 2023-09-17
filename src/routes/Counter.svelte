@@ -69,6 +69,10 @@
 		stroke: var(--color-theme-1);
 	}
 
+	.counter {
+		margin: 20px;
+	}
+
 	.counter-viewport {
 		width: 8em;
 		height: 4em;

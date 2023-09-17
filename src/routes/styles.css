@@ -5,10 +5,10 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--color-bg: rgb(36, 55, 70);
+	--color-bg-darker: rgb(25, 38, 49);
 	--color-theme-1: rgb(87, 215, 255);
-	--color-theme-2: #4075a6;
 	--color-text: rgb(255, 255, 255);
-	--column-width: 42rem;
+	--column-width: 48rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
 	color: var(--color-text);
@@ -20,6 +20,14 @@ body {
 	background-attachment: fixed;
 	background-color: var(--color-bg);
 	background-size: 100vw 100vh;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 0.6;
 }
 
 h1, h2, h3 { margin: 0; }
@@ -48,13 +56,11 @@ a:hover {
 	text-decoration: underline;
 }
 
-
-pre {
+pre, kbd {
 	font-size: 16px;
 	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
+	background-color: var(--color-bg-darker);
 	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
 	padding: 0.5em;
 	overflow-x: auto;
 	color: var(--color-text);
@@ -62,10 +68,9 @@ pre {
 
 .text-column {
 	display: flex;
-	max-width: 48rem;
+	max-width: var(--column-width);
 	flex: 0.6;
 	flex-direction: column;
-	justify-content: center;
 	margin: 0 auto;
 }
 
@@ -89,4 +94,45 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+/** Sverdle styles */
+
+:root {
+	--color-theme-2: #4075a6;
+	--color-theme-3: #c8ad15;
+	--color-theme-4: rgba(0, 0, 0, 0.5);
+	--color-theme-5: 'white';
+}
+
+.letter {
+	aspect-ratio: 1;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-sizing: border-box;
+	text-transform: lowercase;
+	border: none;
+	font-size: calc(0.08 * var(--width));
+	border-radius: 2px;
+	background: white;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.missing {
+	background: var(--color-theme-4);
+	color: var(--color-theme-5);
+}
+
+.exact {
+	background: var(--color-theme-2);
+	color: var(--color-theme-5);
+}
+
+.close {
+	background: var(--color-theme-3);
+	color: var(--color-theme-5);
 }
