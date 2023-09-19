@@ -74,6 +74,17 @@ pre, kbd {
 	margin: 0 auto;
 }
 
+input {
+	background-color: var(--color-bg-darker);
+	color: var(--color-text);
+}
+
+input:focus {
+	/* TODO Start here */
+	outline-color: var(--color-theme-1);
+	border-radius: 5px;
+}
+
 input,
 button {
 	font-size: inherit;

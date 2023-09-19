@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<a target="_blank" href="https://github.com/travis-mark/legible.melvis.site">view source</a>
 	</footer>
 </div>
 
