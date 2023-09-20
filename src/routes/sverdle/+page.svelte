@@ -255,7 +255,7 @@
 	}
 
 	.selected {
-		outline: 2px solid var(--color-theme-1);
+		outline: 2px solid var(--color-highlight);
 	}
 
 	.controls {
@@ -306,7 +306,7 @@
 	}
 
 	.keyboard button:focus {
-		background: var(--color-theme-1);
+		background: var(--color-highlight);
 		color: white;
 		outline: none;
 	}
@@ -344,7 +344,7 @@
 
 	.restart:focus,
 	.restart:hover {
-		background: var(--color-theme-1);
+		background: var(--color-highlight);
 		color: white;
 		outline: none;
 	}

@@ -66,7 +66,7 @@
 	path {
 		vector-effect: non-scaling-stroke;
 		stroke-width: 2px;
-		stroke: var(--color-theme-1);
+		stroke: var(--color-highlight);
 	}
 
 	.counter {
@@ -87,7 +87,7 @@
 		width: 100%;
 		height: 100%;
 		font-weight: 400;
-		color: var(--color-theme-1);
+		color: var(--color-highlight);
 		font-size: 4rem;
 		align-items: center;
 		justify-content: center;

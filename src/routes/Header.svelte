@@ -59,7 +59,7 @@
 	}
 
 	li[aria-current='page'] {
-		border-bottom: 4px solid var(--color-theme-1);
+		border-bottom: 4px solid var(--color-highlight);
 		margin-bottom: -4px;
 	}
 
@@ -78,6 +78,6 @@
 	}
 
 	a:hover {
-		color: var(--color-theme-1);
+		color: var(--color-highlight);
 	}
 </style>

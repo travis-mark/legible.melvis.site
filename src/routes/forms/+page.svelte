@@ -5,15 +5,22 @@
 
 <div class="text-column">
 	<h2>Forms</h2>
-	<form>
+	<form style="display: flex; flex-direction: column; gap: 8px;">
+		<div>
+			<select>
+				<option></option>
+				<option>HELLO</option>
+				<option>WORLD</option>
+			</select>
+		</div>
 		<div>
 			<input>
 		</div>
 		<div>
-			<select></select>
+			<textarea></textarea>
 		</div>
 		<div>
-			<textarea></textarea>
+			<button type="submit">Do It</button>
 		</div>
 	</form>
 </div>
