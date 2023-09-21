@@ -10,5 +10,5 @@
 <section>
 	<h2>Welcome to your new SvelteKit app!</h2>
 	<Counter />
-	<h2>Try editing <kbd>src/routes/+page.svelte</kbd></h2>
+	<p>Try editing <kbd>src/routes/+page.svelte</kbd></p>
 </section>
